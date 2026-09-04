@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+     scroll-behavior: smooth;}
+
+     body{
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: #080808;
+        color:white;
+     }
+     /*========= Navbar=========*/
+     header{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        background:rgba(0,0,0,0.75);
+        z-index:1000;
+        backdrop-filter:blur(10px);
+     }
+     nav{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:0 8%;
+        height:80px;
+     }
+     .logo span,
+     h1 span,
+     h2 span{
+        color:#00eaff;
+     }
+     nav ul{
+        display:flex;
+        list-style:none;
+        gap:30px;
+     }
+     nav ul li a{
+        text-decoration:none;
+        color:white;
+        font-size:18px;
+        transition:0.3s;
+     }
+        nav ul li a:hover{
+            color:#00eaff;
+        }
+        /*========= Home=========*/
+        .home{
+            height:100vh;
+            background-image:url("background2.jpg");
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            align-items:center; 
+        }
+        .Overlay{
+            position:absolute;
+            inset:0
+
+            backgroundlinear-gradient(
+                90deg
+                rgba(0,0,0,0.9)
+                rgba(0,0,0,0.55)
+                rgba(0,0,0,0.3)
+            );
+        }
+        .home-content{
+            position: relative;
+            z-index: 2;
+            max-width: 650px;
+            margin-left: 10%;
+        }
+        .small-text{
+            color: #00eaff;
+            letter-spacing: 4pxf;
+            font-size: 14px;
+            margin-bottom: 15px;
+
+        }
+        .home-content h1{
+            font-size: 28px;
+            margin-bottom: 20px;
+
+        }
+        .home-content h2{
+            font-size: 28px;
+            margin-bottom: 20px;
+
+        }
+        .home-content p{
+            line-height: 1.7;
+            color: #ddd;
+        }
+        /*=======button======*/
+        .btn{
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 30px;
+            background:#00eaff;
+            color:black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+        
+        }
+        .btn:hover{
+            background:white;
+            transform:translateY(-3px);
+        }
+        /*============Section==========*/
+        .section{
+            min-height: 100vh;
+            padding: 100px 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .section>h2{
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+        /*=======================About==========*/
+        .about-box{
+            display:flex;
+            align-items: center;
+            gap: 60px;
+        }
+        .aboutbox img{
+            width:350px;
+            height: 350px;
+            object-fit: cover;
+            border: radius 20px;
+            border:2px solid #00eaff
+        
+        }
+        .about-text{
+            max-width: 600px;
+        }
+        .about-text h3{
+            font-size: 30px;
+            margin-bottom: 20px;
+
+        }
+        .about-text p{
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 15px;
+
+        }
+        /*============SKILLS============*/
+        .skills-section{
+            background: #101010;
+
+        }
+        .skills{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+        }
+        .skill-box{
+            width: 280px;
+            padding: 35px 25px;
+            background: #181818;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .skill-box:hover{
+            transform: translateY(-10px);
+            border-color: #00eaff;
+            box-shadow: 0 0 20px rgba(0,234,255,0.3);
+
+        }
+        .skill-box h3{
+            color: #00eaff;
+           font-size:25px;
+           margin-bottom: 15px;
+        }
+        .skill-box p{
+            color:#bbb;
+            line-height: 1.6;
+        }
+/*===============CONTACT==============*/
+        .contact-section{
+            background: #080808;
+        }
+        form{
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input,
+        textarea{
+            width:100%;
+            padding:15px;
+            background: #151515;
+            border: 1px solid#444;
+            border-radius: 8px;
+            color:white;
+            outline: none;
+            font-size: 16px;
+        }
+        inout:focus,
+        textarea:focus{
+            border-color: #00eaff;
+        }
+        button{
+            padding: 15px;
+            background: #00eaff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition:0.3s;
+
+        }
+        button:hover{
+            background: white;
+        }
+        #result{
+            text-align: center;
+            margin-top: 10px;
+        }
+       /*==============footer============*/
+       footer{
+        text-align: center;
+        padding:25px;
+        background: #050505;
+        color: #888;
+       }
+       /*==============MOBILE==========*/
+       @media(max-width:78px){
+        nav{
+            padding: 0.5%;
+        }
+        nav ul{
+            gap: 12px;
+
+        }
+        nav ul li a{
+            font-size: 13px;
+        }
+        .home-content{
+            margin-left: 6%;
+            margin-right: 6%;
+        }
+        .home-content h1{
+            font-size: 42px;
+        }
+        .home-content h2{
+            font-size: 21px;
+        }
+        .about-box{
+            flex-direction: column;
+            text-align: center;
+        }
+        .about-box img{
+            width:280px;
+            height: 280px;
+        }
+        .skills{
+            flex-direction: column;
+            max-width: 350px;
+        }
+       }
+        
