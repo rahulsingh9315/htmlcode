@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rahul | Personal Website</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!---music-->
+      <audio id="bgMusic" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+      </audio>
+      <button id="musicBtn" class="music-btn">
+            🔇MUsic OFF
+      </button>
+    <!----navbar-->
+     <header>
+        <nav>
+            <div class="logo">
+                Rahul<span>.</span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+    <!--home---->
+    <section id="home" class="home">
+        <div class="home-content">
+        <p class="welcome">WELCOME TO MY WEBSITE</p>
+        <h1>
+            Hi, I am <span>Rahul</span>
+        </h1>
+        <h2>BCA Student & Web Developer </h2>
+        <p>
+            I am learning web developmment and programming.
+            I Create Websites using HTML,CSS,JavaScript.
+        </p>
+        <div class="buttons">
+            <a href="#about" class="btn">
+                About Me
+            </a>
+            <a href="#contact" class="btn outline">
+                 Contact me 
+            </a>
+        </div>
+        </div>
+    </section>
+    <!--about-->
+    <section id="about" class="section">
+        <h2 class="title">
+            About<span> Me</span>
+        </h2>
+        <div class="about-container">
+            <div class="photo-box">
+                <img src="image.avif" alt="welcome photo">
+            </div>
+            <div class="about-content">
+                <h3>Hello 👋</h3>
+                <p>
+                    My Name is Rahul. I am a BCA Student and a Web Developer. I have a passion for creating beautiful and functional websites. I am constantly learning new technologies and improving my skills to become a better developer. I enjoy working on challenging projects and collaborating with others to bring ideas to life.
+                </p>
+                <p>
+                    I am currently learning HTML,CSS and JavaScript and working on differrent website projects.
+                </p>
+                <button class="read-btn" onclick="showmore()"> 
+                    Read More
+                </button>
+                <p id="moreText"></p> 
+            </div>
+            
+        </div>
+    </section>
+    <!---skills-->
+    <section id="skills" >
+        <h2> My Skills</h2>
+        <div class="skill-container">
+        <div class="skill-card">
+            <div class="icon">🌐</div>
+            <h3>HTML</h3>
+            <p>
+                I use HTML to create the structure of websites.
+            </p>
+        </div>  
+
+        <div class="skill-card">
+            <div class="icon">🎨</div>
+            <h3>CSS</h3>
+            <p>
+                I use CSS to style and design websites.
+            </p>
+            
+        </div>
+
+        <div class="skill-card">
+            <div class="icon">💻</div>
+            <h3>JavaScript</h3>
+            <p>
+             I use JavaScript to add interactivity and functionality to websites.
+            </p>
+        </div>
+    
+    </section>
+    <!---contact-->
+    <section id="contact" class="section ccntact-section">
+        <h2 class="title">
+            contact <span>Me</span> 
+
+        </h2>
+        <div class="contact-container">
+            <form id="contactForm">
+                <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+                >
+                <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+                >
+                <input
+                type="tel"
+                id="phone"
+                placeholder="Your Phone Number"
+                required
+                >
+                <textarea
+                id="message"
+                rows="6"
+                placeholder="Write your Message....."
+                required
+                ></textarea>
+                <button type="submit" class="send-btn">
+                    Send Message
+                </button>
+                <p id="status"> </p>
+
+            </form>
+            <!---contact info-->
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>📧Email:dayalbisht54@gmail.com</p>
+                <p>📞Phone: +91 9821603387</p>
+                <p>📍India</p>
+                <div class="social-buttons">
+                    <a 
+                    href="mailto:dayalbisht54@gmail.com"
+                    class="social"
+                    >
+                    Email
+                </a>
+                <a
+                    href="https://wa.me/919821603387"
+                    target="_blank"
+                    class="social"
+                    >
+                    WhatsApp
+                </a>
+
+            
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <p>
+        ©️2026 Rahul | Made with HTML,CSS,JavaScript ❤️   </p>
+        <script src="script3.js"></script>
+
+</body>
